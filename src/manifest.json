@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Custom New Tab",
+  "short_name": "Custom New Tab",
+  "description": "Set the URL you want new tabs to load and it'll load it.",
+  "version": "1.)",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "homepage_url": "",
+  "minimum_chrome_version": "26.0.1428",
+  "options_page": "options.html",
+  "chrome_url_overrides": {
+    "newtab": "redirect.html"
+  },
+  "permissions": [
+    "storage",
+    "file:///*"
+  ],
+  "web_accessible_resources": [
+    "blank.html"
+  ]
+}
